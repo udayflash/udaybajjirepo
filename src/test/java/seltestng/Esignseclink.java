@@ -26,5 +26,6 @@ public class Esignseclink {
 	driver.findElement(By.xpath("(//div[@class='g-table']//mat-icon[@mattooltip='Open Secure Link' and starts-with(@class,'mat-icon')][1])[10]")).click();
 	Thread.sleep(2000);
 	driver.findElement(By.xpath("//body[1]/div[3]/div[2]/div[1]/mat-dialog-container[1]/div[1]/div[1]/lib-secure-link[1]/mat-dialog-content[1]/div[1]/div[2]/div[1]/div[2]/div[1]/u[1]/p[1]")).click();
+    System.out.println("Automate esign secure link");
     }
 }
