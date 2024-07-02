@@ -1,5 +1,6 @@
-package seltestng;
 
+
+package seltestng;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -9,11 +10,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
-
 public class ESigned {
-    
+  
 	WebDriver driver;
-	 @Test 
+	 @Test
 	public void Signiq() throws InterruptedException {
 		// TODO Auto-generated method stub
 		driver = new ChromeDriver();
@@ -126,5 +126,6 @@ public class ESigned {
 	    driver.findElement(By.xpath("//button[@class='olv-button olv-ignore-transform css-1n4kelk']")).click();
 	    Thread.sleep(2000);
 	    driver.findElement(By.xpath("//button[@class='olv-button olv-ignore-transform css-4es3us']")).click();
-	 }    
-} 
+	 }   
+}
+
