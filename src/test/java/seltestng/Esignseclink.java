@@ -4,7 +4,7 @@ import java.util.Set;
 //import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
+//import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,13 +13,13 @@ import org.testng.annotations.Test;
 @Test
 public class Esignseclink {
     WebDriver driver;
-    JavascriptExecutor jsDriver;
+//    JavascriptExecutor jsDriver;
 	private By iframe;
     @Test
     public void securesign() throws InterruptedException {
 		// TODO Auto-generated method stub
     driver = new ChromeDriver();
-    jsDriver = (JavascriptExecutor) driver;
+//    jsDriver = (JavascriptExecutor) driver;
     driver.manage().window().maximize();
     driver.get("https://test.qount.io");
     Thread.sleep(5000);
@@ -27,7 +27,8 @@ public class Esignseclink {
 	driver.findElement(By.id("input__password")).sendKeys("Qount-uday18");
 	driver.findElement(By.xpath("//button[@type='submit']")).click();
 	Thread.sleep(7000);
-	driver.findElement(By.cssSelector("body > app-root:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > app-side-bar:nth-child(1) > div:nth-child(4) > mat-tab-group:nth-child(1) > div:nth-child(2) > mat-tab-body:nth-child(1) > div:nth-child(1) > div:nth-child(1) > mat-selection-list:nth-child(1) > mat-list-option:nth-child(15) > span:nth-child(1) > span:nth-child(1) > span:nth-child(1)")).click();
+	driver.findElement(By.xpath("//span[text()='# eSignatures']")).click();
+//	driver.findElement(By.cssSelector("body > app-root:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > app-side-bar:nth-child(1) > div:nth-child(4) > mat-tab-group:nth-child(1) > div:nth-child(2) > mat-tab-body:nth-child(1) > div:nth-child(1) > div:nth-child(1) > mat-selection-list:nth-child(1) > mat-list-option:nth-child(15) > span:nth-child(1) > span:nth-child(1) > span:nth-child(1)")).click();
 	//driver.findElement(By.cssSelector("body > app-root:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > lib-esignatures-lib:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > q-grid:nth-child(1) > div:nth-child(2) > qount-grid:nth-child(1) > div:nth-child(1) > div:nth-child(2) > cdk-virtual-scroll-viewport:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(4) > div:nth-child(13) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > mat-icon:nth-child(1)")).click();
     Thread.sleep(4000);
 	driver.findElement(By.xpath("(//div[@class='g-table']//mat-icon[@mattooltip='Open Secure Link' and starts-with(@class,'mat-icon')][1])[4]")).click();
@@ -56,7 +57,9 @@ public class Esignseclink {
 			Thread.sleep(13000);
 			WebElement frameon = driver.findElement(iframe);    //iframe field
 			driver.switchTo().frame(frameon);
-			WebElement conton = driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[4]/div/div/div[4]/div/button"));
+			Thread.sleep(3000);
+			driver.findElement(By.xpath("//span[text()='Required']")).click();
+			WebElement conton = driver.findElement(By.xpath("//button[@id='action-bar-btn-continue'][normalize-space()='Continue']"));
 			conton.click();
 	//		driver.findElement(By.xpath("(//button[@id='action-bar-btn-continue'][contains(text(),'Continue')])")).click();
    //         driver.findElement(By.cssSelector("button[id='action-bar-btn-continue']")).click();

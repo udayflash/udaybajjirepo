@@ -18,7 +18,8 @@ public class Createsign {
 	private By username = By.cssSelector("input[placeholder='Username']");
 	private By password = By.id("input__password");
 	private By submit = By.xpath("//button[@type='submit']");
-	private By esignatures = By.cssSelector("body > app-root:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > app-side-bar:nth-child(1) > div:nth-child(4) > mat-tab-group:nth-child(1) > div:nth-child(2) > mat-tab-body:nth-child(1) > div:nth-child(1) > div:nth-child(1) > mat-selection-list:nth-child(1) > mat-list-option:nth-child(15) > span:nth-child(1) > span:nth-child(1) > span:nth-child(1)");
+	private By esignatures = By.xpath("//span[text()='# eSignatures']");
+//	private By esignatures = By.cssSelector("body > app-root:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > app-side-bar:nth-child(1) > div:nth-child(4) > mat-tab-group:nth-child(1) > div:nth-child(2) > mat-tab-body:nth-child(1) > div:nth-child(1) > div:nth-child(1) > mat-selection-list:nth-child(1) > mat-list-option:nth-child(15) > span:nth-child(1) > span:nth-child(1) > span:nth-child(1)");
     private By createsignicon = By.xpath("//mat-icon[@class='mat-icon notranslate fs-4 mt-1 text-primary material-icons-outlined mat-icon-no-color']");
     private By reminderdrop = By.id("mat-select-2");
 	private By reminderselect = By.cssSelector("#mat-option-1");

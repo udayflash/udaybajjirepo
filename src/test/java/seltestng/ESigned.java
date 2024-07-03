@@ -25,7 +25,8 @@ public class ESigned {
 		driver.findElement(By.id("input__password")).sendKeys("Qount-uday18");
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
 		Thread.sleep(6000);
-		driver.findElement(By.cssSelector("body > app-root:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > app-side-bar:nth-child(1) > div:nth-child(4) > mat-tab-group:nth-child(1) > div:nth-child(2) > mat-tab-body:nth-child(1) > div:nth-child(1) > div:nth-child(1) > mat-selection-list:nth-child(1) > mat-list-option:nth-child(15) > span:nth-child(1) > span:nth-child(1) > span:nth-child(1)")).click();
+		driver.findElement(By.xpath("//span[text()='# eSignatures']")).click();
+//		driver.findElement(By.cssSelector("body > app-root:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > app-side-bar:nth-child(1) > div:nth-child(4) > mat-tab-group:nth-child(1) > div:nth-child(2) > mat-tab-body:nth-child(1) > div:nth-child(1) > div:nth-child(1) > mat-selection-list:nth-child(1) > mat-list-option:nth-child(15) > span:nth-child(1) > span:nth-child(1) > span:nth-child(1)")).click();
 		driver.findElement(By.xpath("//mat-icon[@class='mat-icon notranslate fs-4 mt-1 text-primary material-icons-outlined mat-icon-no-color']")).click();
 		driver.findElement(By.xpath("//input[contains(@id,'mat-input-')]")).sendKeys("Automatnumesign67");
 		Thread.sleep(3000);

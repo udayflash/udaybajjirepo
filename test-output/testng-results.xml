@@ -1,55 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-02T18:14:48 IST" name="Default suite" finished-at="2024-07-02T18:15:59 IST" duration-ms="70720">
+  <suite started-at="2024-07-03T16:15:10 IST" name="Default suite" finished-at="2024-07-03T16:15:44 IST" duration-ms="34597">
     <groups>
     </groups>
-    <test started-at="2024-07-02T18:14:48 IST" name="Default test" finished-at="2024-07-02T18:15:59 IST" duration-ms="70720">
-      <class name="seltestng.Esignseclink">
-        <test-method signature="securesign()[pri:0, instance:seltestng.Esignseclink@72967906]" started-at="2024-07-02T18:14:48 IST" name="securesign" finished-at="2024-07-02T18:15:59 IST" duration-ms="70683" status="FAIL">
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Locator must be set]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Locator must be set
-at org.openqa.selenium.internal.Require.nonNull(Require.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-at seltestng.Esignseclink.securesign(Esignseclink.java:57)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
+    <test started-at="2024-07-03T16:15:10 IST" name="Default test" finished-at="2024-07-03T16:15:44 IST" duration-ms="34597">
+      <class name="seltestng.Settingsign">
+        <test-method is-config="true" signature="LoginQtaw()[pri:0, instance:seltestng.Settingsign@3c19aaa5]" started-at="2024-07-03T16:15:10 IST" name="LoginQtaw" finished-at="2024-07-03T16:15:32 IST" duration-ms="21938" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- securesign -->
-      </class> <!-- seltestng.Esignseclink -->
+        </test-method> <!-- LoginQtaw -->
+        <test-method signature="Setmfa()[pri:0, instance:seltestng.Settingsign@3c19aaa5]" started-at="2024-07-03T16:15:32 IST" name="Setmfa" finished-at="2024-07-03T16:15:43 IST" duration-ms="11511" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setmfa -->
+        <test-method is-config="true" signature="Signset()[pri:0, instance:seltestng.Settingsign@3c19aaa5]" started-at="2024-07-03T16:15:43 IST" name="Signset" finished-at="2024-07-03T16:15:44 IST" duration-ms="1115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Signset -->
+      </class> <!-- seltestng.Settingsign -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
