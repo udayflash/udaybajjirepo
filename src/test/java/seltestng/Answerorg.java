@@ -10,6 +10,11 @@ import org.testng.annotations.Test;
 
 public class Answerorg {
     WebDriver driver;
+    private By organizerdata = By.xpath("(//td[normalize-space()='All Qs DLs 85 dup'])[1]");
+    private By inprogresstab = By.xpath("//div[normalize-space()='In Progress']");
+    private By clientorganizer = By.xpath("//span[normalize-space()='Bullvice ledgers']");
+    private By radiobutton = By.xpath("(//mat-card[@class='mat-mdc-card mdc-card py-0'])[1]//span[normalize-space()='Anjaneyulu']");
+//    private By checkmark = By.xpath("(//div[@class='flex-grow-1 qs-card mb-2 c-pointer'])[3]//span[normalize-space()='True']//span[@class='checkmark']");
     @Test
 	public void organise() throws InterruptedException {
 		// TODO Auto-generated method stub
@@ -21,22 +26,23 @@ public class Answerorg {
 		driver.findElement(By.id("input__password")).sendKeys("Qount-uday18");
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
 		Thread.sleep(6000);
-		driver.findElement(By.cssSelector("body > app-root:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > app-side-bar:nth-child(1) > div:nth-child(4) > mat-tab-group:nth-child(1) > div:nth-child(2) > mat-tab-body:nth-child(1) > div:nth-child(1) > div:nth-child(1) > mat-selection-list:nth-child(1) > mat-list-option:nth-child(18) > span:nth-child(1) > span:nth-child(1) > span:nth-child(1)")).click();
+		driver.findElement(By.xpath("//span[text()='# Organizers']")).click();
+//		driver.findElement(By.cssSelector("body > app-root:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > app-side-bar:nth-child(1) > div:nth-child(4) > mat-tab-group:nth-child(1) > div:nth-child(2) > mat-tab-body:nth-child(1) > div:nth-child(1) > div:nth-child(1) > mat-selection-list:nth-child(1) > mat-list-option:nth-child(18) > span:nth-child(1) > span:nth-child(1) > span:nth-child(1)")).click();
 		Thread.sleep(5000);
 		Actions actoned = new Actions(driver);
 		    WebElement orgrown = driver.findElement(By.xpath("(//td[normalize-space()='All Qs DLs 85 dup'])[1]"));
 		    actoned.moveToElement(orgrown).perform();
 		    Thread.sleep(4000);
-			driver.findElement(By.xpath("(//td[normalize-space()='All Qs DLs 85 dup'])[1]")).click();
+			driver.findElement(organizerdata).click();
 			Thread.sleep(4000);
-			driver.findElement(By.xpath("//div[normalize-space()='In Progress']")).click();
+			driver.findElement(inprogresstab).click();
 			Thread.sleep(4000);
-			driver.findElement(By.xpath("//span[normalize-space()='Bullvice ledgers']")).click();
+			driver.findElement(clientorganizer).click();
 			Thread.sleep(4000);
-			driver.findElement(By.xpath("(//mat-card[@class='mat-mdc-card mdc-card py-0'])[1]//span[normalize-space()='Subhash']")).click();
+			driver.findElement(radiobutton).click();
 			Thread.sleep(6000);
 			JavascriptExecutor js = (JavascriptExecutor) driver;
-			js.executeScript("window.scrollBy(0,550)", "");
+			js.executeScript("window.scrollBy(0,550)","");
 	//		WebElement iscrolls = driver.findElement(By.xpath("/html/body/app-root/div[1]/div[2]/div[2]/app-client-answers-qs/div/div/div[2]/mat-tab-group/div/mat-tab-body[4]"));
 		 	 //WebElement iscroll = driver.findElement(By.xpath("(//cdk-virtual-scroll-viewport[@class='cdk-virtual-scroll-viewport view-port ng-tns-c147-12 cdk-virtual-scrollable cdk-virtual-scroll-orientation-vertical'])[1]"));
 	//	 	JavascriptExecutor Jscrpt = (JavascriptExecutor) driver;

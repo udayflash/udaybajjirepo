@@ -3,14 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="seltestng.Multimethod">
+      <class name="seltestng.Questionspage">
         <methods>
-          <include name="Esignflow"/>
-          <include name="LoginQt"/>
-          <include name="Syncesign"/>
-          <include name="quitQt"/>
+          <include name="answerpage"/>
         </methods>
-      </class> <!-- seltestng.Multimethod -->
+      </class> <!-- seltestng.Questionspage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
