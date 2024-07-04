@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-04T16:40:04 IST" name="Default suite" finished-at="2024-07-04T16:41:22 IST" duration-ms="78724">
+  <suite started-at="2024-07-04T19:31:56 IST" name="Default suite" finished-at="2024-07-04T19:33:42 IST" duration-ms="105863">
     <groups>
     </groups>
-    <test started-at="2024-07-04T16:40:04 IST" name="Default test" finished-at="2024-07-04T16:41:22 IST" duration-ms="78724">
+    <test started-at="2024-07-04T19:31:56 IST" name="Default test" finished-at="2024-07-04T19:33:42 IST" duration-ms="105863">
       <class name="seltestng.Questionspage">
-        <test-method signature="answerpage()[pri:0, instance:seltestng.Questionspage@1a482e36]" started-at="2024-07-04T16:40:04 IST" name="answerpage" finished-at="2024-07-04T16:41:22 IST" duration-ms="78670" status="PASS">
+        <test-method signature="answerpage()[pri:0, instance:seltestng.Questionspage@1a482e36]" started-at="2024-07-04T19:31:57 IST" name="answerpage" finished-at="2024-07-04T19:33:42 IST" duration-ms="105797" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- answerpage -->

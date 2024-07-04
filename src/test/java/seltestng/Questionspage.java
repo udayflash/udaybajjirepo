@@ -66,10 +66,28 @@ public class Questionspage {
     driver.findElement(By.xpath("(//button[@class='mdc-icon-button mat-mdc-icon-button mat-unthemed mat-mdc-button-base'])[1]")).click();
     Thread.sleep(3000);//prev section
     driver.findElement(By.xpath("(//button[@class='mdc-icon-button mat-mdc-icon-button mat-unthemed mat-mdc-button-base'])[3]")).click();
-    //next section
+    Thread.sleep(3000);//next section
+    driver.findElement(By.xpath("(//button[@class='mdc-icon-button mat-mdc-icon-button mat-unthemed mat-mdc-button-base'])[2]")).click();
+    Thread.sleep(3000);//next section
+    driver.findElement(By.xpath("//button[@class='mdc-icon-button mat-mdc-icon-button mat-unthemed mat-mdc-button-base ng-star-inserted']")).click();
+    Thread.sleep(3000); //prev section review
+    driver.findElement(By.xpath("(//button[@class='mdc-icon-button mat-mdc-icon-button mat-unthemed mat-mdc-button-base'])[2]")).click();
+    Thread.sleep(3000);
+    WebElement comment = driver.findElement(By.xpath("(//mat-icon[@role='img'][normalize-space()='chat_bubble_outline'])[9]"));
+    actoned.moveToElement(comment).perform();
+    Thread.sleep(3000);
+    driver.findElement(By.xpath("(//mat-icon[@role='img'][normalize-space()='chat_bubble_outline'])[8]")).click();
+    Thread.sleep(3000);
+    driver.findElement(By.xpath("//label[contains(@id,'mat-mdc-form-field-label-')]")).click();
+    Thread.sleep(2000);
+    Actions actionsc = new Actions(driver);
+	actionsc.sendKeys("Automate comment").build().perform();
+	Thread.sleep(2000);
+	driver.findElement(By.xpath("//span[text()='Cancel']")).click();
+//    driver.findElement(By.xpath("//label[contains(@id,'mat-mdc-form-field-label-')]")).sendKeys("automate comment");
     //    driver.findElement(By.xpath("//span[normalize-space()='Save & Proceed']")).click();
     //   WebElement checkboxquestion = driver.findElement(By.xpath("(//div[normalize-space()='2.'])[1]"));
-  //  actoned.moveToElement(checkboxquestion).perform();   
-    
+  //  actoned.moveToElement(checkboxquestion).perform();      
+  //input[contains(@id,'mat-input-')]  //label[@id='mat-mdc-form-field-label-118']
     }
 }
