@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-04T19:31:56 IST" name="Default suite" finished-at="2024-07-04T19:33:42 IST" duration-ms="105863">
+  <suite started-at="2024-07-08T17:54:46 IST" name="Default suite" finished-at="2024-07-08T17:56:35 IST" duration-ms="108942">
     <groups>
     </groups>
-    <test started-at="2024-07-04T19:31:56 IST" name="Default test" finished-at="2024-07-04T19:33:42 IST" duration-ms="105863">
-      <class name="seltestng.Questionspage">
-        <test-method signature="answerpage()[pri:0, instance:seltestng.Questionspage@1a482e36]" started-at="2024-07-04T19:31:57 IST" name="answerpage" finished-at="2024-07-04T19:33:42 IST" duration-ms="105797" status="PASS">
+    <test started-at="2024-07-08T17:54:46 IST" name="Default test" finished-at="2024-07-08T17:56:35 IST" duration-ms="108942">
+      <class name="seltestng.Answerall">
+        <test-method signature="allanswertype()[pri:0, instance:seltestng.Answerall@1a482e36]" started-at="2024-07-08T17:54:46 IST" name="allanswertype" finished-at="2024-07-08T17:56:35 IST" duration-ms="108904" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- answerpage -->
-      </class> <!-- seltestng.Questionspage -->
+        </test-method> <!-- allanswertype -->
+      </class> <!-- seltestng.Answerall -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="seltestng.Questionspage">
+      <class name="seltestng.Answerall">
         <methods>
-          <include name="answerpage"/>
+          <include name="allanswertype"/>
         </methods>
-      </class> <!-- seltestng.Questionspage -->
+      </class> <!-- seltestng.Answerall -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

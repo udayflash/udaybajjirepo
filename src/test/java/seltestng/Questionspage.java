@@ -72,8 +72,8 @@ public class Questionspage {
     driver.findElement(By.xpath("//button[@class='mdc-icon-button mat-mdc-icon-button mat-unthemed mat-mdc-button-base ng-star-inserted']")).click();
     Thread.sleep(3000); //prev section review
     driver.findElement(By.xpath("(//button[@class='mdc-icon-button mat-mdc-icon-button mat-unthemed mat-mdc-button-base'])[2]")).click();
-    Thread.sleep(3000);
-    WebElement comment = driver.findElement(By.xpath("(//mat-icon[@role='img'][normalize-space()='chat_bubble_outline'])[9]"));
+    Thread.sleep(3000);//next section
+/*    WebElement comment = driver.findElement(By.xpath("(//mat-icon[@role='img'][normalize-space()='chat_bubble_outline'])[9]"));
     actoned.moveToElement(comment).perform();
     Thread.sleep(3000);
     driver.findElement(By.xpath("(//mat-icon[@role='img'][normalize-space()='chat_bubble_outline'])[8]")).click();
@@ -83,11 +83,27 @@ public class Questionspage {
     Actions actionsc = new Actions(driver);
 	actionsc.sendKeys("Automate comment").build().perform();
 	Thread.sleep(2000);
-	driver.findElement(By.xpath("//span[text()='Cancel']")).click();
-//    driver.findElement(By.xpath("//label[contains(@id,'mat-mdc-form-field-label-')]")).sendKeys("automate comment");
-    //    driver.findElement(By.xpath("//span[normalize-space()='Save & Proceed']")).click();
-    //   WebElement checkboxquestion = driver.findElement(By.xpath("(//div[normalize-space()='2.'])[1]"));
-  //  actoned.moveToElement(checkboxquestion).perform();      
-  //input[contains(@id,'mat-input-')]  //label[@id='mat-mdc-form-field-label-118']
+	driver.findElement(By.xpath("//span[text()='Cancel']")).click();        */
+//	Thread.sleep(2000);
+	WebElement radioquestion = driver.findElement(By.xpath("(//div[normalize-space()='11.'])[1]"));
+    actoned.moveToElement(radioquestion).perform();
+    Thread.sleep(4000);
+    driver.findElement(By.xpath("(//span[@class='text-black fs-8 fw-normal'][contains(text(),'True')])[1]")).click();
+    Thread.sleep(2000);
+    WebElement radiolike = driver.findElement(By.xpath("(//div[normalize-space()='12.'])[1]"));
+    actoned.moveToElement(radiolike).perform();
+    Thread.sleep(4000);
+    driver.findElement(By.xpath("(//span[@class='text-black fs-8 fw-normal'][contains(text(),'Like')])[1]")).click();
+    Thread.sleep(2000);
+/*    WebElement radioquestone = driver.findElement(By.xpath("(//div[normalize-space()='10.'])[1]"));
+    actoned.moveToElement(radioquestone).perform();
+    Thread.sleep(2000);
+    driver.findElement(By.xpath("(//span[contains(text(),'True')])[1]")).click();
+    Thread.sleep(2000);     
+  //input[contains(@id,'mat-input-')]  //label[@id='mat-mdc-form-field-label-118']   
+    WebElement radiodislike = driver.findElement(By.xpath("(//div[normalize-space()='11.'])[1]"));
+    actoned.moveToElement(radiodislike).perform();
+    Thread.sleep(2000);
+    driver.findElement(By.xpath("(//span[contains(text(),'Dislike')])[1]")).click();  */
     }
 }
