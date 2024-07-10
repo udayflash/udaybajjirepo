@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-08T17:54:46 IST" name="Default suite" finished-at="2024-07-08T17:56:35 IST" duration-ms="108942">
+  <suite started-at="2024-07-10T19:32:17 IST" name="Default suite" finished-at="2024-07-10T19:33:58 IST" duration-ms="100963">
     <groups>
     </groups>
-    <test started-at="2024-07-08T17:54:46 IST" name="Default test" finished-at="2024-07-08T17:56:35 IST" duration-ms="108942">
-      <class name="seltestng.Answerall">
-        <test-method signature="allanswertype()[pri:0, instance:seltestng.Answerall@1a482e36]" started-at="2024-07-08T17:54:46 IST" name="allanswertype" finished-at="2024-07-08T17:56:35 IST" duration-ms="108904" status="PASS">
+    <test started-at="2024-07-10T19:32:17 IST" name="Default test" finished-at="2024-07-10T19:33:58 IST" duration-ms="100963">
+      <class name="seltestng.Sendorganizer">
+        <test-method signature="clientsend()[pri:0, instance:seltestng.Sendorganizer@1a482e36]" started-at="2024-07-10T19:32:17 IST" name="clientsend" finished-at="2024-07-10T19:33:58 IST" duration-ms="100914" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- allanswertype -->
-      </class> <!-- seltestng.Answerall -->
+        </test-method> <!-- clientsend -->
+      </class> <!-- seltestng.Sendorganizer -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

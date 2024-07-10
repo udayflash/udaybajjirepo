@@ -45,20 +45,8 @@ public class Answerall {
     driver.findElement(By.xpath("(//div[@class='shadow-sm py-2 px-3 fw-bold c-pointer star selected'][normalize-space()='2'])[1]")).click();
     Thread.sleep(2000);
     driver.findElement(By.xpath("(//div[@class='shadow-sm py-2 px-3 fw-bold c-pointer star selected'][normalize-space()='1'])[1]")).click();
-    Thread.sleep(3000); */ 
-/*    Thread.sleep(3000);//next section
-    WebElement comment = driver.findElement(By.xpath("(//mat-icon[@role='img'][normalize-space()='chat_bubble_outline'])[7]"));
-    actoned.moveToElement(comment).perform();
-    Thread.sleep(3000);
-    driver.findElement(By.xpath("(//mat-icon[@role='img'][normalize-space()='chat_bubble_outline'])[6]")).click();
-    Thread.sleep(3000);
-    driver.findElement(By.xpath("//label[contains(@id,'mat-mdc-form-field-label-')]")).click();
-    Thread.sleep(2000);
-    Actions actionsc = new Actions(driver);
-	actionsc.sendKeys("Automate comment").build().perform();
-	Thread.sleep(2000);
-	driver.findElement(By.xpath("//span[text()='Cancel']")).click();        */
-//	Thread.sleep(2000);	
+    Thread.sleep(3000);  
+    Thread.sleep(3000);//next section    */	
 	WebElement checkquestion = driver.findElement(By.xpath("(//div[normalize-space()='4.'])[1]"));
     actoned.moveToElement(checkquestion).perform();
     Thread.sleep(2000);
@@ -148,6 +136,8 @@ public class Answerall {
  //   Thread.sleep(2000);
     driver.findElement(By.xpath("(//mat-icon[normalize-space()='file_download'])[1]")).click();
     Thread.sleep(2000);
-    driver.findElement(By.xpath("//span[text()=' Organizer with Attachments ']")).click();
+    driver.findElement(By.xpath("(//mat-icon[normalize-space()='file_download'])[1]")).click();
+    Thread.sleep(2000);
+//    driver.findElement(By.xpath("//span[text()=' Organizer with Attachments ']")).click();
     }
 }

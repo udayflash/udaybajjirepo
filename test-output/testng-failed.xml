@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="seltestng.Answerall">
+      <class name="seltestng.Sendorganizer">
         <methods>
-          <include name="allanswertype"/>
+          <include name="clientsend"/>
         </methods>
-      </class> <!-- seltestng.Answerall -->
+      </class> <!-- seltestng.Sendorganizer -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
