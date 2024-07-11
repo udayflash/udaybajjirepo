@@ -1,18 +1,15 @@
 package seltestng;
 
-import javax.swing.text.Document;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class Sendorganizer {
+public class Scheduleorganizer {
     WebDriver driver;
     @Test
-	public void clientsend() throws InterruptedException {
+	public void sendattime() throws InterruptedException {
 		// TODO Auto-generated method stub
     driver = new ChromeDriver();
     driver.manage().window().maximize();
@@ -54,10 +51,6 @@ public class Sendorganizer {
 	driver.findElement(By.xpath("(//label[normalize-space()='Enable MFA'])[1]")).click();
 	Thread.sleep(2000);
 	driver.findElement(By.xpath("(//label[normalize-space()='Enable MFA'])[1]")).click();
-//	JavascriptExecutor jsmfa = (JavascriptExecutor) driver;
-//	jsmfa.executeScript("document.getElementById('mat-mdc-slide-toggle-12-label').click()");
-//	driver.findElement(By.xpath("(//mat-slide-toggle[@id='mat-mdc-slide-toggle-12'])[1]")).click();
-//	driver.findElement(By.xpath("(//button[@id='mat-mdc-slide-toggle-12-button'])[1]")).click();
 	Thread.sleep(2000);
 	driver.findElement(By.xpath("//span[normalize-space()='Next']")).click();
 	Thread.sleep(3000);
@@ -74,10 +67,18 @@ public class Sendorganizer {
     Thread.sleep(4000);
     driver.findElement(By.xpath("//span[normalize-space()='Select']")).click();
     Thread.sleep(5000);
-    driver.findElement(By.xpath("(//span[normalize-space()='Send'])[2]")).click(); 
+ /*   driver.findElement(By.xpath("(//span[normalize-space()='Send'])[2]")).click(); 
     Thread.sleep(2000);
     driver.findElement(By.xpath("//span[normalize-space()='Save as Draft']")).click();
     Thread.sleep(2000);
-    driver.findElement(By.xpath("//span[normalize-space()='Send']")).click();
-    }
+    driver.findElement(By.xpath("//span[normalize-space()='Send']")).click();    */
+ //   Thread.sleep(2000);
+    driver.findElement(By.xpath("(//span[normalize-space()='Schedule'])[1]")).click();
+    Thread.sleep(4000);
+    driver.findElement(By.xpath("(//input[@id='mat-input-6'])[1]")).click();
+    Thread.sleep(2000);
+    driver.findElement(By.xpath("(//li[normalize-space()='12:03 AM'])[1]")).click();
+    Thread.sleep(3000);
+    driver.findElement(By.xpath("//button[contains(text(),'Schedule')]")).click();
+	}
 }
