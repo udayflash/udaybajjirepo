@@ -1,81 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-11T19:50:12 IST" name="Default suite" finished-at="2024-07-11T19:51:44 IST" duration-ms="91309">
+  <suite started-at="2024-07-15T17:49:47 IST" name="Default suite" finished-at="2024-07-15T17:50:55 IST" duration-ms="68156">
     <groups>
     </groups>
-    <test started-at="2024-07-11T19:50:12 IST" name="Default test" finished-at="2024-07-11T19:51:44 IST" duration-ms="91309">
-      <class name="seltestng.Clientportalesign">
-        <test-method signature="portalesign()[pri:0, instance:seltestng.Clientportalesign@1a482e36]" started-at="2024-07-11T19:50:12 IST" name="portalesign" finished-at="2024-07-11T19:51:44 IST" duration-ms="91235" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <button class="btn btn-lg btn-done-signing btn-ghost" data-action="action-bar-finish" data-qa="action-bar-finish" data-text="finishButtonText" id="action-bar-btn-finish" track="top-finish-button" type="button" data-allow-unprompted-exit="" style="">...</button> is not clickable at point (1158, 23). Other element would receive the click: <div id="adopt-dialog" class="modal-wrap dialog" tabindex="-1">...</div>
-  (Session info: chrome=126.0.6478.127)
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [aaddfbfe26c672bac90990a5db504b12, clickElement {id=f.68274D31E599DEF71DED6BDFEF5207CD.d.47D4DC825DAAB86025C37589EB88BA88.e.44}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54059}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54059/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (aaddfbfe26c672bac90990a5db504b12)] -> xpath: //button[normalize-space()='Finish']]
-Session ID: aaddfbfe26c672bac90990a5db504b12]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="btn btn-lg btn-done-signing btn-ghost" data-action="action-bar-finish" data-qa="action-bar-finish" data-text="finishButtonText" id="action-bar-btn-finish" track="top-finish-button" type="button" data-allow-unprompted-exit="" style="">...</button> is not clickable at point (1158, 23). Other element would receive the click: <div id="adopt-dialog" class="modal-wrap dialog" tabindex="-1">...</div>
-  (Session info: chrome=126.0.6478.127)
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [aaddfbfe26c672bac90990a5db504b12, clickElement {id=f.68274D31E599DEF71DED6BDFEF5207CD.d.47D4DC825DAAB86025C37589EB88BA88.e.44}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54059}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54059/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (aaddfbfe26c672bac90990a5db504b12)] -> xpath: //button[normalize-space()='Finish']]
-Session ID: aaddfbfe26c672bac90990a5db504b12
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at seltestng.Clientportalesign.portalesign(Clientportalesign.java:58)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+    <test started-at="2024-07-15T17:49:47 IST" name="Default test" finished-at="2024-07-15T17:50:55 IST" duration-ms="68156">
+      <class name="seltestng.Loginclientportal">
+        <test-method signature="portallogin()[pri:0, instance:seltestng.Loginclientportal@1bd4fdd]" started-at="2024-07-15T17:49:47 IST" name="portallogin" finished-at="2024-07-15T17:50:55 IST" duration-ms="68114" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- portalesign -->
-      </class> <!-- seltestng.Clientportalesign -->
+        </test-method> <!-- portallogin -->
+      </class> <!-- seltestng.Loginclientportal -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

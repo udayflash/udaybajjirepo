@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="seltestng.Clientportalesign">
+      <class name="seltestng.Loginclientportal">
         <methods>
-          <include name="portalesign"/>
+          <include name="portallogin"/>
         </methods>
-      </class> <!-- seltestng.Clientportalesign -->
+      </class> <!-- seltestng.Loginclientportal -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

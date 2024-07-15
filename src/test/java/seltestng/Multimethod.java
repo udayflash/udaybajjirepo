@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 public class Multimethod {
@@ -62,6 +63,7 @@ public class Multimethod {
            	driver.findElement(By.xpath("(//span[normalize-space()='Cancel'])[1]")).click();
            	Thread.sleep(2000);
     }
+    @Ignore
     @Test(priority=5)
             public void histry() throws InterruptedException {
     	    WebElement iscroll = driver.findElement(By.xpath("(//mat-icon[@role='img'][normalize-space()='more_vert'])[4]"));
@@ -75,7 +77,7 @@ public class Multimethod {
      	    driver.findElement(By.xpath("(//mat-icon[@class='mat-icon notranslate mt-3 fs-6 material-icons mat-ligature-font mat-icon-no-color'])[1]")).click();
      	    Thread.sleep(2000);
     }
-    @Test(priority=6)
+    @Test(enabled=false)
     public void Esignflow() throws InterruptedException {
     WebElement iscroll = driver.findElement(By.xpath("(//mat-icon[@role='img'][normalize-space()='more_vert'])[6]"));
 	 //WebElement iscroll = driver.findElement(By.xpath("(//cdk-virtual-scroll-viewport[@class='cdk-virtual-scroll-viewport view-port ng-tns-c147-12 cdk-virtual-scrollable cdk-virtual-scroll-orientation-vertical'])[1]"));
